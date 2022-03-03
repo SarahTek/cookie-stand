@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, Times;
+}
+body {
+  width: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROWR-oPBBIObjDESJ54r3a1nZ7CeEqtK772XAsAmImluhwDHQGPtzVLoYWdNgSDup6L94&usqp=CAU");
+  background-repeat: no-repeat;
+  font-style: 15px;
+  text-shadow: 4px 4px 4px #aaa;
+  margin: auto;
+}
+li {
+  font-family: Georgia, Times;
+}
