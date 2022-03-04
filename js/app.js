@@ -36,6 +36,9 @@ let seattle = {
       listItem.textContent = hour[i] + ': ' + this.cookiesSoldPerHour[i] + ' cookies';
       cityList.appendChild(listItem);
     }
+    let listItemTotal = document.createElement('li');
+    listItemTotal.textContent ='Total cookies: ' + this.dailyTotal;
+    cityList.appendChild(listItemTotal);
   }
 
 };
@@ -78,9 +81,15 @@ let tokyo = {
       listItem.textContent = hour[i] + ': ' + this.cookiesSoldPerHour[i] + ' cookies';
       cityList.appendChild(listItem);
     }
+    let listItemTotal = document.createElement('li');
+    listItemTotal.textContent ='Total cookies: ' + this.dailyTotal;
+    cityList.appendChild(listItemTotal);
   }
 
 };
+
+
+
 
 let dubai = {
   name: 'dubai',
@@ -116,6 +125,9 @@ let dubai = {
       listItem.textContent = hour[i] + ': ' + this.cookiesSoldPerHour[i] + ' cookies';
       cityList.appendChild(listItem);
     }
+    let listItemTotal = document.createElement('li');
+    listItemTotal.textContent ='Total cookies: ' + this.dailyTotal;
+    cityList.appendChild(listItemTotal);
   }
 
 };
@@ -161,6 +173,9 @@ let paris = {
       listItem.textContent = hour[i] + ': ' + this.cookiesSoldPerHour[i] + ' cookies';
       cityList.appendChild(listItem);
     }
+    let listItemTotal = document.createElement('li');
+    listItemTotal.textContent ='Total cookies: ' + this.dailyTotal;
+    cityList.appendChild(listItemTotal);
   }
 
 };
@@ -203,6 +218,9 @@ let lima = {
       listItem.textContent = hour[i] + ': ' + this.cookiesSoldPerHour[i] + ' cookies';
       cityList.appendChild(listItem);
     }
+    let listItemTotal = document.createElement('li');
+    listItemTotal.textContent ='Total cookies: ' + this.dailyTotal;
+    cityList.appendChild(listItemTotal);
   }
 
 };
