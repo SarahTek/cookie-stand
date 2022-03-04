@@ -4,11 +4,12 @@
 }
 body {
   width: 100%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROWR-oPBBIObjDESJ54r3a1nZ7CeEqtK772XAsAmImluhwDHQGPtzVLoYWdNgSDup6L94&usqp=CAU");
+  background-color: rgba(213, 184, 255);
   background-repeat: no-repeat;
-  font-style: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-shadow: 4px 4px 4px #aaa;
   margin: auto;
+  text-align: center;
 }
 li {
   font-family: Georgia, Times;
