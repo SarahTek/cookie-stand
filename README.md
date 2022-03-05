@@ -30,7 +30,7 @@ Before you begin, create a new repository within GitHub callled â€œcookie-standâ
 
 Create two new pages within your project. One for Sales Data (sales.html) and another for the homepage (index.html).
 
-Sales Data
+Sales Data:
 Within your javascript file (example: app.js), create separate JS object literals for each shop location that outputs the following to the sales.html file:
 
 Stores the min/max hourly customers, and the average cookies per customer, in object properties
