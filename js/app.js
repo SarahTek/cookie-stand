@@ -18,8 +18,6 @@ function Store(name,minCus,maxCus,avg){
 
 }
 
-
-
 Store.prototype.getRandomCustomer = function(){
   for ( let i = 0; i < hour.length; i++){
     let custNumberThisHour = Math.floor(Math.random() * (this.maxCus - this.minCus + 1) + this.minCus);
@@ -35,8 +33,6 @@ Store.prototype.calcCookiesPerHour = function(){
   }
   return this.dailyTotal, this.cookiesSold;
 };
-
-
 
 Store.prototype.render = function(){
   this.calcCookiesPerHour();
@@ -55,8 +51,6 @@ Store.prototype.render = function(){
   storeRow.appendChild(listItemTotal);
 };
 
-
-
 function makeHeader(){
   let tableRow = document.createElement('tr');
   let tableHeader = document.createElement('th');
@@ -68,39 +62,37 @@ function makeHeader(){
     tableRow.appendChild(tableHeader);
   }
   tableHeader = document.createElement('th');
-  tableHeader.textContent = 'total';
+  tableHeader.textContent = 'Total';
   tableRow.appendChild(tableHeader);
   table.appendChild(tableRow);
 }
 
-
-
 function makeFooter(){
   let tableRow = document.createElement('tr');
-  let tableHeader = document.createElement('th');
+  let tableHeader = document.createElement('td');
   tableHeader.textContent = 'Hourly Total';
   tableRow.appendChild(tableHeader);
   let grandTotal = 0;
   for (let i = 0; i < hour.length; i++){
     let hourlyTotal = 0;
-    for (let j = 0; j < storeArray.length; i++){
+    for (let j = 0; j < storeArray.length; j++){
       hourlyTotal += storeArray[j].cookiesSoldPerHour[i];
       grandTotal += storeArray[j].cookiesSoldPerHour[i];
     }
-    tableHeader = document.createElement('th');
-    tableHeader.textContent = hourlyTotal;
-    tableRow.appendChild(tableHeader);
+    let tableHour = document.createElement('td');
+    tableHour.textContent = hourlyTotal;
+    tableRow.appendChild(tableHour);
   }
-  tableHeader = document.createElement('th');
-  tableHeader.textContent = grandTotal;
-  tableRow.appendChild(tableHeader);
+  let tableTotal = document.createElement('td');
+  tableTotal.textContent = grandTotal;
+  tableRow.appendChild(tableTotal);
   table.appendChild(tableRow);
 }
-new Store('Seattle',23,65,6.3);
-new Store('Tokyo',3,24,1.2);
-new Store('Dubai',11,38,3.7);
-new Store('Paris',23,65,6.3);
-new Store('Lima',2,16,4.6);
+new Store('Seattle',23,65,6.3),
+new Store('Tokyo',3,24,1.2),
+new Store('Dubai',11,38,3.7),
+new Store('Paris',23,65,6.3),
+new Store('Lima',2,16,4.6),
 
 makeHeader();
 for( let i = 0; i < storeArray.length; i++){
