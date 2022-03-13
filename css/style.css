@@ -5,13 +5,9 @@
   padding: 0;
 }
 body {
-  /* width: 100%; */
   background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.50)), url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_98214257_2000131420009280386_137581.jpg);
-  /* background-color: rgb(186, 156, 138) ; */
   background-repeat: no-repeat;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  /* font-family: 'courgette', cursive; */
-  /* text-shadow: 4px 4px 4px #aaa; */
   margin: auto;
   text-align: center;
   background-size: cover;
@@ -33,8 +29,6 @@ nav li a{
 }
 nav li a:hover{
   background-color: black;
-  
-  
 }
 
 h1{
@@ -47,11 +41,10 @@ justify-content: space-around;
 height: 85px;
 width: 100%;
 position: fixed;
-/* background-color: #b1633a; */
 background-color: #3B2215;
 
 } 
-#bigfish{
+#fish{
   float: left;
 }
 #familyphoto{
