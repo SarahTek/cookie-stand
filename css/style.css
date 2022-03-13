@@ -1,16 +1,96 @@
 * {
   box-sizing: border-box;
   font-family: Georgia, Times;
+  margin: 0;
+  padding: 0;
 }
 body {
-  width: 100%;
-  background-color: #a87474;
+  /* width: 100%; */
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.50)), url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_98214257_2000131420009280386_137581.jpg);
+  /* background-color: rgb(186, 156, 138) ; */
   background-repeat: no-repeat;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-shadow: 4px 4px 4px #aaa;
+  /* text-shadow: 4px 4px 4px #aaa; */
   margin: auto;
   text-align: center;
+  background-size: cover;
+  padding: 0;
 }
 li {
   font-family: Georgia, Times;
+  display:inline-flex;
+  padding-right: 50px;
+  font-size: 25px;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover{
+  background-color: black;
+  
+  
+}
+
+h1{
+  font-size: 30px;
+}
+#topheader nav{ 
+display: flex;
+align-items: center;
+justify-content: space-around;
+height: 85px;
+width: 100%;
+position: fixed;
+background-color: #b1633a;
+
+} 
+#bigfish{
+  float: left;
+}
+#familyphoto{
+  margin: auto;
+  padding-top: 70px;
+}
+#locationlist {
+  
+  display: inline-flex;
+  font-family:sans-serif;
+ margin-top: 20px;
+ margin-left: 50px;
+  
+}
+#locationlist a{
+  text-decoration: none;
+  color:white;
+}
+h2{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+#cookies{
+  margin-top:50px;
+}
+section{
+  height: 350px;
+  width: 300px;
+  border: solid 1px white;
+  overflow: scroll;
+  float: left;
+}
+section p{
+  font-size: large;
+  color: rgba(255, 0, 0, 0.523);
+}
+footer{
+  margin-top: auto;
+}
+.contact{
+  margin-top: 250px;
+  color: white;
+}
+footer h1{
+  margin-bottom: 15px;
 }
