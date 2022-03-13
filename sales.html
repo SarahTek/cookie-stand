@@ -15,8 +15,12 @@
   <style>
     * {
       box-sizing: border-box;
+      color: white;
     }
-
+  body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.50)), url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_98214257_2000131420009280386_137581.jpg);
+    /* width: auto; */
+  }
     table {
       border-spacing: 0;
       margin: auto;
@@ -26,6 +30,22 @@
     table th {
       border: thin black solid;
 
+    }
+    form{
+      width: 80%;
+    }
+    label{
+      display: block;
+      font-size: smaller;
+      margin: 2px 0 4px 0;
+      color: white;
+      /* display: list-item; */
+    }
+    input{
+      width: 50%;
+    }
+    legend{
+      color: white;
     }
   </style>
 </head>
@@ -53,7 +73,33 @@
   <table id="table">
 
   </table>
-
+<form>
+  <!-- <input id="storename"> -->
+  <fieldset>
+    <legend>Sales Data Form</legend>
+    <label >
+      Location Name
+    <input id="location">
+  </label>
+      Minimum Customer Per Hour
+      <input id="mini_cust">
+    </label>
+    <label>
+      Maximum Customer Per Hour
+    <input id="max-cust">
+    </label>
+    <label>
+      Average Cookies Sold Per Hour
+      <input id="avg-cookies">
+    </label>
+    
+    <label>
+      Submit
+      <input id="Submit">
+    </label>
+    
+  </fieldset>
+</form>
 
   <script src="js/app.js"></script>
 
