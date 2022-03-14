@@ -98,4 +98,30 @@ makeHeader();
 for( let i = 0; i < storeArray.length; i++){
   storeArray[i].render();
 }
+function storeForm(event){
+  event.preventDefault();
+console.log('I am a form');
+
+let locationName = document.getElementById('location');
+let minCustomer = document.getElementById('mini_cust');
+let maxCusomer = document.getElementById('max_cust');
+let aveCookies = document.getElementById('avg-cookies');
+let addSubmit = document.getElementById('submit');
+console.log(locationName);
+let storeForm = new storeForm(
+  locationName.value,
+  minCustomer.value,
+  maxCusomer.value,
+  aveCookies.value,
+  addSubmit.value,
+)
+
+  let newForm = document.getElementById('new form');
+  newForm.addEventListener('submit', storeForm);
+
+  
+
+  
+storeForm.render();
+}
 makeFooter();
