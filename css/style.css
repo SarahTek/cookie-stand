@@ -84,14 +84,13 @@ section p{
   font-size: large;
   color: #FFC48A;
 }
-footer{
-  margin-top: auto;
-}
-.contact{
+
+#contact{
   margin-top: 250px;
   color: white;
+  font-size: 20px;
 }
-footer h3{
-  margin-bottom: 15px;
-  font-size: large;
+div h4:hover{
+color: pink;
+font-size: 50px;
 }
