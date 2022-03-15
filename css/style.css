@@ -5,13 +5,15 @@
   padding: 0;
 }
 body {
-  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.50)), url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_98214257_2000131420009280386_137581.jpg);
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_98214257_2000131420009280386_137581.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: auto;
   text-align: center;
-  background-size: cover;
+  background-size: cover; 
   padding: 0;
+margin-bottom: 50%;
 }
 header h1{
   color:#FFC48A
@@ -61,7 +63,7 @@ background-color: #3B2215;
 }
 #locationlist a{
   text-decoration: none;
-  color:white;
+  color: white;
 }
 h2{
   font-size: 40px;

@@ -46,6 +46,10 @@
       color: white;
     }
     button{
+      color: white;
+    
+    }
+    input{
       color: black;
     }
   </style>
@@ -67,32 +71,35 @@
   <footer>
 
   </footer>
-  <table id="table">
-
+  <table>
+<thead id="head"></thead>
+<tbody id="table"></tbody>
+<tfoot id ="foot"></tfoot>
   </table>
-<form>
+<form id="new_form">
   <fieldset>
     <legend>Sales Data Form</legend>
     <label id="new form">
       Location Name
-    <input id="location" required>
+    <input id="location" required name="location"> 
   </label>
       Minimum Customer Per Hour
-      <input id="mini_cust" require type="number">
+      <input id="mini_cust" require type="number" name="mini_cust">
     </label>
     <label>
       Maximum Customer Per Hour
-    <input id="max_cust" required type="number">
+    <input id="max_cust" required type="number" name="max_cust">
     </label>
     <label>
       Average Cookies Sold Per Hour
-      <input id="avg-cookies" required type="number">
+      <input id="avg_cookies" required type="number" name="avg_cookies">
     </label>
     
     <button id="submit">Submit</button>
     
   </fieldset>
 </form>
+
 
   <script src="js/app.js"></script>
 
