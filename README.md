@@ -1,7 +1,7 @@
 # cookie-stand
 Lab: Salmon Cookies
 Author: sarah 
-collaboraters = martha and natellie
+collaboraters = martha, natellie and Zaya
 
 Read this lab assignment in its entirety before beginning your lab. You may want to open it in a new tab.
 
