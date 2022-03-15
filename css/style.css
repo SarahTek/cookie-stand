@@ -87,19 +87,12 @@ section p{
   color: #FFC48A;
 }
 
-
 #contact{
-  margin-top: 160px;
-  margin-right: 20px;
+  margin-top: 250px;
   color: white;
-  font-size: 30px;
-  display: center;
+  font-size: 20px;
 }
-
-h4:hover{
+div h4:hover{
 color: pink;
-
-}
-div h4{
-  font-size: 60px;
+font-size: 50px;
 }

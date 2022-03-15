@@ -90,15 +90,15 @@ function makeFooter() {
   foot.appendChild(tableRow);
 }
 new Store('Seattle', 23, 65, 6.3),
-  new Store('Tokyo', 3, 24, 1.2),
-  new Store('Dubai', 11, 38, 3.7),
-  new Store('Paris', 23, 65, 6.3),
-  new Store('Lima', 2, 16, 4.6),
+new Store('Tokyo', 3, 24, 1.2),
+new Store('Dubai', 11, 38, 3.7),
+new Store('Paris', 23, 65, 6.3),
+new Store('Lima', 2, 16, 4.6),
 
-  makeHeader();
+makeHeader();
 for (let i = 0; i < storeArray.length; i++) {
   storeArray[i].render();
-}  
+}
 
 function footerReset(){
   while (foot.firstChild){
@@ -110,25 +110,24 @@ function footerReset(){
 let newForm = document.getElementById('new_form');
 newForm.addEventListener('submit', function (event) {
   event.preventDefault();
-  // console.log('I am a form');
   let form = event.target;
   let locationName = form.location;
   let minCustomer = form.mini_cust;
   let maxCustomer = form.max_cust;
-  let avgCookies = form.avg_cust;
-  console.log(locationName);
+  let avgCookies = form.avg_cookies;
   let storeForm = new Store(
     locationName.value,
     minCustomer.value,
     maxCustomer.value,
-    avgCookies.value,
-);
-footerReset();
-storeForm.render();
-locationName.value = "";
-minCustomer.value = "";
-maxCustomer.value = "";
-avgCookies.value = "";
+    avgCookies.value
+  );
+  console.log(storeForm);
+  storeForm.render();
+  locationName.value = null;
+  minCustomer.value = null;
+  maxCustomer.value = null;
+  avgCookies.value = null;
 
+  footerReset();
 });
 makeFooter();
