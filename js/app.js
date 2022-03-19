@@ -21,7 +21,8 @@ function Store(name, minCus, maxCus, avg) {
 
 Store.prototype.getRandomCustomer = function () {
   for (let i = 0; i < hour.length; i++) {
-    let custNumberThisHour = Math.floor(Math.random() * (this.maxCus - this.minCus + 1) + this.minCus);
+    let custNumberThisHour = Math.ceil(Math.random() * (this.maxCus - this.minCus) + this.minCus);
+    console.log(custNumberThisHour);
     this.custPerHour.push(custNumberThisHour);
   }
 };
@@ -111,22 +112,22 @@ let newForm = document.getElementById('new_form');
 newForm.addEventListener('submit', function (event) {
   event.preventDefault();
   let form = event.target;
-  let locationName = form.location;
-  let minCustomer = form.mini_cust;
-  let maxCustomer = form.max_cust;
-  let avgCookies = form.avg_cookies;
+  let locationName = form.location.value;
+  let minCustomer = parseInt(form.mini_cust.value);
+  let maxCustomer = parseInt(form.max_cust.value);
+  let avgCookies = parseInt(form.avg_cookies.value);
   let storeForm = new Store(
-    locationName.value,
-    minCustomer.value,
-    maxCustomer.value,
-    avgCookies.value
+    locationName,
+    minCustomer,
+    maxCustomer,
+    avgCookies
   );
   console.log(storeForm);
   storeForm.render();
-  locationName.value = null;
-  minCustomer.value = null;
-  maxCustomer.value = null;
-  avgCookies.value = null;
+  locationName = '';
+  minCustomer = 0;
+  maxCustomer = 0;
+  avgCookies = 0;
 
   footerReset();
 });
